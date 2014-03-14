@@ -1,0 +1,55 @@
+
+div.debugger
+{
+    width: 310px;
+    height: auto;
+    
+    margin: 0px;
+    padding: 0px;
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    overflow: auto;
+    display: none;
+    
+    background-color: transparent;
+    border-style: none;
+}
+
+div.debugger > div.console_s,
+div.debugger > div.console_m,
+div.debugger > div.console_b 
+{
+    width: 290px;
+    margin: 0px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    
+    background-color: rgba(0,0,0,0.5);
+    font-family: sans-serif;
+    text-align: left;
+    font-size: 13px;
+    color: #FFFFFF;
+    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: block;
+}
+
+div.debugger > div.console_s
+{
+    height: 15px;
+}
+
+div.debugger > div.console_m
+{
+    height: 70px;
+}
+
+div.debugger > div.console_b
+{
+    height: 125px;
+}

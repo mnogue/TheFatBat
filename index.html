@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<!-- meta ---------------------------------------------------------------------------------- -->
+	<meta charset="utf-8" />
+	<title>Fat Bat</title>
+	<meta name="viewport" content="user-scalable=1.0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	
+	<!-- css ----------------------------------------------------------------------------------- -->
+	<link rel="stylesheet" type="text/css" href="css/windows.css">
+	<link rel="stylesheet" type="text/css" href="css/debugger.css">
+	
+	<!-- plugins ------------------------------------------------------------------------------- -->
+	<script type="text/javascript" src="engine/plugins/jquery/jquery.1.9.1.min.js"></script>
+	<script type="text/javascript" src="engine/plugins/jquery/jquery.easing.js"></script>
+	<script type="text/javascript" src="engine/plugins/box-2d/box2dweb.2.1.min.js"></script>
+	<!-- components ---------------------------------------------------------------------------- -->
+	<script type="text/javascript" src="engine/components/gameobject.class.js"></script>
+	<script type="text/javascript" src="engine/components/rigidbody.class.js"></script>
+	<script type="text/javascript" src="engine/components/renderer.class.js"></script>
+	<script type="text/javascript" src="engine/components/player.class.js"></script>
+	<script type="text/javascript" src="engine/components/cobweb.class.js"></script>
+	<script type="text/javascript" src="engine/components/pole.class.js"></script>
+	<script type="text/javascript" src="engine/components/spine.class.js"></script>
+	<script type="text/javascript" src="engine/components/gear.class.js"></script>
+	<script type="text/javascript" src="engine/components/star.class.js"></script>
+	<script type="text/javascript" src="engine/components/goal.class.js"></script>
+	<!-- classes ------------------------------------------------------------------------------- -->
+	<script type="text/javascript" src="engine/contactlisteners.class.js"></script>
+	<script type="text/javascript" src="engine/debugger.class.js"></script>
+	<script type="text/javascript" src="engine/engine.class.js"></script>
+	<script type="text/javascript" src="engine/settings.class.js"></script>
+	<script type="text/javascript" src="engine/canvas.class.js"></script>
+	<script type="text/javascript" src="engine/input.class.js"></script>
+	<script type="text/javascript" src="engine/scene.class.js"></script>
+	<script type="text/javascript" src="engine/menu.class.js"></script>
+	<!-- main engine --------------------------------------------------------------------------- -->
+	<script type="text/javascript" src="engine/main.js"></script>
+	
+</head>
+<body class="body">
+	
+	<div class="game" id="game">
+		
+		<!-- victory menu -->
+		<div class="victory" id="victory"></div>
+		
+		<!-- sliding doors -->
+		<div class="slider slider1" id="slider1"></div>
+		<div class="slider slider2" id="slider2"></div>
+	
+		<!-- game menu -->
+		<div class="menu" id="menu"></div>
+		
+		<!-- level select -->
+		<div class="select" id="select"></div>
+		
+		<!-- game ui -->
+		<div class="gameui" id="gameui"></div>
+		
+		<!-- canvas -->
+		<div class="background" id="background"></div>
+		<canvas class="view" id="view" width="960" height="640"></canvas>
+	
+		<!-- debug consoles -->
+		<div class="debugger">
+			<div class="console_s" id="console1">console #1</div>
+			<div class="console_m" id="console2">console #2</div>
+			<div class="console_b" id="console3">console #3</div>
+			<div class="console_s" id="console4">console #4</div>
+		</div>
+		
+	</div>
+	
+</body>
+</html>
